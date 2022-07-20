@@ -65,10 +65,11 @@
     font-size: 14px;
     font-weight: 600;
     margin-bottom: 18px;
+    /* color: red; */
     
 }
 .planDesc>.rightIcon{
-    /* font-weight:bolder; */
+    font-weight:bolder;
     color: #E57CD8;
 }
 .startButtonDiv{

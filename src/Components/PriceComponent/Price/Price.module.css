@@ -101,3 +101,56 @@
     background-color: white;
     color: black;
 }
+
+.paraDiv{
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+    width: 700px;
+}
+
+.paraDiv>p:nth-child(2){
+    margin-top: 20px;
+}
+
+.compareButton{
+    margin: auto;
+    height: 56px;
+    width: 250px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 30px;
+    display: flex;
+    border-radius: 30px;
+    align-items: center;
+    align-content: center;
+    border: 1px solid white;
+}
+.compareButton>p{
+    margin: auto;
+}
+
+.compareButton:hover{
+    background-color: #FCE5D8;
+    color: #E57CD8;
+}
+
+.FAQsMainDiv{
+    background-color: #412a4c;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
