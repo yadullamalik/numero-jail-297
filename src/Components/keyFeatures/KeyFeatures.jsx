@@ -3,6 +3,7 @@ import "./KeyFeatures.css";
 import { BiCaretRight } from "react-icons/bi";
 import { SpecificCard } from "./SpecificCard";
 import { useRef } from "react";
+import { useState } from "react";
 
 export const KeyFeatures = () => {
   const cards1 = [
