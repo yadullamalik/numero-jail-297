@@ -1,15 +1,16 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import Annual from "../Billing/Annual";
 import Monthly from "../Billing/Monthly";
 import FAQs from "../FAQs/FAQs";
+import Signup from "../signUp/Signup";
 import style from "./Price.module.css";
 // import Try from "./Try";
 const Price = () => {
   const [show, setShow] = useState(true);
-//   const comparePlan = useRef(null);
-//   const scrollComparePlan = () => {
-//     comparePlan.current?.scrollIntoView({ behavior: "smooth" });
-//   };
+  //   const comparePlan = useRef(null);
+  //   const scrollComparePlan = () => {
+  //     comparePlan.current?.scrollIntoView({ behavior: "smooth" });
+  //   };
   return (
     <div className={style.mainPricingDiv}>
       <div className={style.mainHeadingDiv}>
@@ -30,7 +31,7 @@ const Price = () => {
           <button
             onClick={() => setShow(true)}
             className={
-              (show == true && style.annaul) || style.billingButtonAnnual
+              (show === true && style.annaul) || style.billingButtonAnnual
             }
           >
             Annual
@@ -38,7 +39,7 @@ const Price = () => {
           <button
             onClick={() => setShow(false)}
             className={
-              (show == false && style.monthly) || style.billingButtonMonthly
+              (show === false && style.monthly) || style.billingButtonMonthly
             }
           >
             Monthly
@@ -60,9 +61,20 @@ const Price = () => {
           <p>Compare all plan features</p>
         </div>
       </div>
+      <div className={style.toggleTrackDiv}>
+        <img src="https://i.postimg.cc/MKLQv3xn/img-2.png" alt=""/>
+      </div>
       <div className={style.FAQsMainDiv}>
-        <h1>fAQs</h1>
-        <FAQs/>
+        <img className={style.brandImg} src="https://public-assets.toggl.com/b/static/1ede89b0d75ce5a9cd6476ba3f2d6cf4/83e96/brands-oneliner.avif" alt=""/>
+        <h1 className={style.faq}>FAQs</h1>
+        <FAQs />
+        <div className={style.signupMainDiv}>
+          <Signup />
+        </div>
+        <div className={style.onboardDiv}>
+          <p>Onboarding a team?</p>
+          <p>Book a demo</p>
+        </div>
       </div>
     </div>
   );
