@@ -1,7 +1,73 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Signstyle from "./Sign.module.css";
 import Footer from '../Homepage/Footer';
+import {useNavigate} from "react-router-dom"
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const Signup1 = () => {
+  const navigate = useNavigate();
+
+    const [inpval, setInpval] = useState({
+       
+        email: "",
+     
+        password: ""
+    })
+
+   
+
+    const [data,setData] = useState([]);
+    console.log(inpval);
+
+    const getdata = (e) => {
+        // console.log(e.target.value);
+
+
+        const { value, name } = e.target;
+        // console.log(value,name);
+
+
+        setInpval(() => {
+            return {
+                ...inpval,
+                [name]: value
+            }
+        })
+
+    }
+
+    const addData = (e) => {
+        e.preventDefault();
+
+        const {  email, password } = inpval;
+
+      
+        if (email === ""  ) {
+         
+
+             toast.error('email field is requred',{
+                position: "top-center",
+            });
+        } else if (!email.includes("@")) {
+             toast.error('plz enter valid email address',{
+                position: "top-center",
+            });
+        }  else if (password === "") {
+             toast.error('password field is requred',{
+                position: "top-center",
+            });
+        } else if (password.length < 5) {
+             toast.error('password length greater five',{
+                position: "top-center",
+            });
+        } else {
+            console.log("data added succesfully");
+            navigate("/login")
+            localStorage.setItem("useryoutube",JSON.stringify([...data,inpval]));
+
+        }
+
+}
   return (
    
  
@@ -26,15 +92,16 @@ Already have an account? Log in here.</p>
 <br/>
 <h3 className={Signstyle.h3inline}>OR</h3>
 <br />
-<form>
+<form onClick={addData}>
 
    
    
   <div className={Signstyle.forms}>
       <label>Email </label><br/>
-      <input type="text" placeholder="Email" /> <br/>
+      <input type="text" name='email' onChange={getdata} placeholder="Email" isrequired/> <br/>
       <label>Password</label><br/>
-      <input type="text" placeholder="Password" />
+      <input type="password" name='password' 
+     onChange={getdata} placeholder="Password" isrequired/>
   </div>
   
    <br/>

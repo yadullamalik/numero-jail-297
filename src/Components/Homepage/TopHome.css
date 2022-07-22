@@ -1,0 +1,31 @@
+.tophome-div-heading{
+    background-color:#2c1338;
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    
+}
+.tophome-div-heading h1{
+color:#fff3ed;
+font-size:66.93px;
+font-family: "GT Haptik Medium", sans-serif;
+text-align: justify;
+line-height: 73px;
+font-weight:500;
+margin-left: 100px;
+
+}
+.tophome-div-sign-timer{
+    display: flex;
+    gap:50px;
+    box-sizing: border-box;
+    
+    
+    background-color: rgb(44, 19, 56); 
+    height:350px;
+}
+.tophome-div-sign-timer >div:nth-child(1){
+
+    padding-right: 30px;
+    margin-left: 30px;
+}

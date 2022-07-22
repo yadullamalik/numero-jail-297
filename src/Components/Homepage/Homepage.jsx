@@ -1,9 +1,13 @@
 import React from 'react'
 import CompanyLogo from './CompanyLogo'
-import SecondHome from './SecondHome'
-import { SignupHome } from '../Singuphome'
+import Footer from './Footer'
+import FooterSignup from './FooterSignup'
 
-import TopHomepage1 from '../TopHomepage1'
+import SecondHome from './SecondHome'
+
+
+
+import TopHomepage1 from './TopHomepage1'
 
 const Homepage = () => {
   return (
@@ -11,7 +15,9 @@ const Homepage = () => {
         <TopHomepage1/>
         <SecondHome/>
         <CompanyLogo/>
-        <SignupHome/>
+        <FooterSignup/>
+        <Footer/>
+       
     </div>
   )
 }

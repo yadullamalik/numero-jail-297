@@ -18,52 +18,88 @@ import { BsApple, BsGoogle } from "react-icons/bs";
 import { useReducer, useState } from "react";
 // import {Link as RouterLink} from "react-router-dom";
 import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
+import { useNavigate } from "react-router-dom";
 
-function reducer(state, action) {
-  console.log("statechecking",state)
-  switch (action.type) {
-    case "email":
-      return {
-        ...state,
-        email: action.payload,
-      };
-    case "password":
-      return {
-        ...state,
-        password: action.payload,
-      };
-
-    default:
-      return state;
-  }
-}
-const initialState = {
-  email: "",
-  password: "",
-};
 
 export default function Signup() {
   const [showPassword, setShowPassword] = useState(false);
-  const [state, dispatch] = useReducer(reducer,initialState);
+  
   const toast = useToast()
-  console.log(state);
- 
+  
+  const navigate = useNavigate();
+
+    const [inpval, setInpval] = useState({
+       
+        email: "",
+     
+        password: ""
+    })
+
+   
+
+    const [data,setData] = useState([]);
+    console.log(inpval);
+
+    const getdata = (e) => {
+        // console.log(e.target.value);
+
+
+        const { value, name } = e.target;
+        // console.log(value,name);
+
+
+        setInpval(() => {
+            return {
+                ...inpval,
+                [name]: value
+            }
+        })
+
+    }
+
+    const addData = (e) => {
+        e.preventDefault();
+        console.log(inpval)
+
+        const {  email, password } = inpval;
+
+      
+        if (email === ""  ) {
+         
+
+             toast.error('email field is requred',{
+                position: "top-center",
+            });
+        } else if (!email.includes("@")) {
+             toast.error('plz enter valid email address',{
+                position: "top-center",
+            });
+        }  else if (password === "") {
+             toast.error('password field is requred',{
+                position: "top-center",
+            });
+        } else if (password.length < 5) {
+             toast.error('password length greater five',{
+                position: "top-center",
+            });
+        } else {
+            console.log("data added succesfully");
+           
+            localStorage.setItem("useryoutube",JSON.stringify([...data,inpval]));
+
+        }
+
+}
   return (
     <Box>
 
-<h1 className="Headingsignup-homepage">
-        Time tracking for{" "}
-        <span style={{ color: "rgb(229, 124, 216)" }}>
-          <i>better</i>
-        </span>{" "}
-        work,
-        <br /> not overwork.
-      </h1>
+
     <Flex
       minH={"50vh"}
       align={"center"}
-      marginLeft={"50px"}
+      marginLeft={"20px"}
       bg={useColorModeValue("rgb(44, 19, 56)")}
+      color={"white"}
     >
     
       <Stack spacing={8} maxW={"lg"} py={12} px={6}>
@@ -72,28 +108,25 @@ export default function Signup() {
           rounded={"lg"}
           bg={useColorModeValue("rgb(44, 19, 56)", "rgb(252, 229, 216)")}
           boxShadow={"lg"}
-          p={8} width={"500px"} marginLeft={"50px"}
-          
-         
+          p={8} width={"100%"} marginLeft={"50px"} 
+          onClick={addData}
+       
         >
           <Stack spacing={4} height={"100px"}>
             <FormControl id="email" isRequired>
               <Input
                 type="email" 
-                value={state.email} placeholder="Email" borderRadius={1}
-                onChange={(e) =>
-                  dispatch({ type: "email", payload: e.target.value })
-                }
+                 placeholder="Email" borderRadius={1}
+                name='email' onChange={getdata}
               />
             </FormControl>
             <FormControl id="password" isRequired>
               <InputGroup >
                 <Input 
                   type={showPassword ? "text" : "password"}
-                  value={state.password} placeholder="Password" borderRadius={1}
-                  onChange={(e) =>
-                    dispatch({ type: "password", payload: e.target.value })
-                  }
+                 placeholder="Password" borderRadius={1}
+                 name='password' 
+                 onChange={getdata} 
                 />
                 <InputRightElement h={"full"}>
                   <Button
@@ -117,7 +150,7 @@ export default function Signup() {
                   color={"white"}
                   borderRadius={"50px"}
                   _hover={{
-                    bg: "blue.500",
+                    bg: " rgb(66, 60, 60)",
                   }}
                   onClick={() =>
                     toast({
@@ -127,13 +160,13 @@ export default function Signup() {
                       duration: 9000,
                       isClosable: true,
                       position:"top"
-                    })}
+                    })} 
                 >
                   Sign up with email
                 </Button>
               </Stack>
               <Stack className="signuptext">
-                <p style={{ color: "white", marginTop: "10px" }}>
+                <p style={{ color: "white", marginTop: "10px",width:"100px"}}>
                   Or sign up with:
                 </p>
               </Stack>
