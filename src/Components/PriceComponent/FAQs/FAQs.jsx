@@ -16,9 +16,11 @@ const FAQs = () => {
         {FaqsData.map((el, idx) => {
           return (
             <div key={idx} className={style.mainDiv}>
-              <AccordionItem>
+              <AccordionItem borderTop="1px solid black" borderBottom="0px">
                 <h2>
-                  <AccordionButton>
+                  <AccordionButton
+                    _expanded={{ bg: "#E57CD8", color: "#412a4c" }}
+                  >
                     <Box
                       flex="1"
                       textAlign="left"
@@ -26,14 +28,18 @@ const FAQs = () => {
                       marginBottom={5}
                       fontSize={22}
                       fontWeight="bold"
-                      color={"#fce5d8"}
                     >
                       {el.Heading}
                     </Box>
-                    <AccordionIcon />
+                    <AccordionIcon boxSize={8} />
                   </AccordionButton>
                 </h2>
-                <AccordionPanel textAlign="left" pb={4}>
+                <AccordionPanel
+                  bg="#E57CD8"
+                  color="#412a4c"
+                  textAlign="left"
+                  pb={4}
+                >
                   {el.Description}
                 </AccordionPanel>
               </AccordionItem>

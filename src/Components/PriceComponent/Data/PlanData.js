@@ -1,0 +1,288 @@
+export const TimeTracking = [
+  {
+    Feature: "Web app, mobile apps, and desktop apps",
+    Free: true,
+    Starter: true,
+    Premium: true,
+    Enterprise: true,
+  },
+  {
+    Feature: "Pomodoro timer",
+    Free: true,
+    Starter: true,
+    Premium: true,
+    Enterprise: true,
+  },
+  {
+    Feature: "Idle time detection",
+    Free: true,
+    Starter: true,
+    Premium: true,
+    Enterprise: true,
+  },
+  {
+    Feature: "Personal time tracking reminders",
+    Free: true,
+    Starter: true,
+    Premium: true,
+    Enterprise: true,
+  },
+  {
+    Feature: "Automated time tracking triggers",
+    Free: true,
+    Starter: true,
+    Premium: true,
+    Enterprise: true,
+  },
+  {
+    Feature: "Personal desktop activity tracking",
+    Free: true,
+    Starter: true,
+    Premium: true,
+    Enterprise: true,
+  },
+  {
+    Feature: "Favorite time entries",
+    Free: false,
+    Starter: true,
+    Premium: true,
+    Enterprise: true,
+  },
+];
+
+export const TeamManagement = [
+  {
+    Feature: "Overview of team activity",
+    Free: true,
+    Starter: true,
+    Premium: true,
+    Enterprise: true,
+  },
+  {
+    Feature: "User groups",
+    Free: true,
+    Starter: true,
+    Premium: true,
+    Enterprise: true,
+  },
+  {
+    Feature: "Team access level management",
+    Free: true,
+    Starter: true,
+    Premium: true,
+    Enterprise: true,
+  },
+  {
+    Feature: "Team time tracking reminder emails",
+    Free: false,
+    Starter: false,
+    Premium: true,
+    Enterprise: true,
+  },
+  {
+    Feature: "Add time for team members",
+    Free: false,
+    Starter: false,
+    Premium: true,
+    Enterprise: true,
+  },
+  {
+    Feature: "Manage team member billable rates and labor costs",
+    Free: false,
+    Starter: false,
+    Premium: true,
+    Enterprise: true,
+  },
+  {
+    Feature: "Single Sign-On (SSO)",
+    Free: false,
+    Starter: false,
+    Premium: true,
+    Enterprise: true,
+  },
+];
+
+export const Reporting = [
+  {
+    Feature: "Exportable Summary, Detailed, and Weekly reports",
+    Free: true,
+    Starter: true,
+    Premium: true,
+    Enterprise: true,
+  },
+  {
+    Feature: "CSV imports",
+    Free: true,
+    Starter: true,
+    Premium: true,
+    Enterprise: true,
+  },
+  {
+    Feature: "XLS export",
+    Free: false,
+    Starter: true,
+    Premium: true,
+    Enterprise: true,
+  },
+  {
+    Feature: "Billable rates",
+    Free: false,
+    Starter: true,
+    Premium: true,
+    Enterprise: true,
+  },
+  {
+    Feature: "Time rounding for reports",
+    Free: false,
+    Starter: true,
+    Premium: true,
+    Enterprise: true,
+  },
+  {
+    Feature: "Custom company logo",
+    Free: false,
+    Starter: true,
+    Premium: true,
+    Enterprise: true,
+  },
+  {
+    Feature: "Saved Reports",
+    Free: false,
+    Starter: true,
+    Premium: true,
+    Enterprise: true,
+  },
+  {
+    Feature: "Schedule saved reports via email",
+    Free: false,
+    Starter: false,
+    Premium: true,
+    Enterprise: true,
+  },
+  {
+    Feature: "Set required fields for time entries",
+    Free: false,
+    Starter: false,
+    Premium: true,
+    Enterprise: true,
+  },
+  {
+    Feature: "Limit tag access",
+    Free: false,
+    Starter: false,
+    Premium: true,
+    Enterprise: true,
+  },
+  {
+    Feature: "Lock time entries",
+    Free: false,
+    Starter: false,
+    Premium: true,
+    Enterprise: true,
+  },
+  {
+    Feature: "Historical billable rates",
+    Free: false,
+    Starter: false,
+    Premium: true,
+    Enterprise: true,
+  },
+  {
+    Feature: "Time entry audits",
+    Free: false,
+    Starter: false,
+    Premium: true,
+    Enterprise: true,
+  }
+];
+
+export const ProjectManagement = [
+  {
+    Feature: "Unlimited projects and clients",
+    Free: true,
+    Starter: true,
+    Premium: true,
+    Enterprise: true,
+  },
+  {
+    Feature: "Pre-populated project templates",
+    Free: false,
+    Starter: true,
+    Premium: true,
+    Enterprise: true,
+  },
+  {
+    Feature: "Tasks (sub-projects)",
+    Free: false,
+    Starter: true,
+    Premium: true,
+    Enterprise: true,
+  },
+  {
+    Feature: "Project time estimates and alerts",
+    Free: false,
+    Starter: true,
+    Premium: true,
+    Enterprise: true,
+  },
+  {
+    Feature: "Recurring projects",
+    Free: false,
+    Starter: true,
+    Premium: true,
+    Enterprise: true,
+  },
+  {
+    Feature: "Project forecasts and analysis",
+    Free: false,
+    Starter: false,
+    Premium: true,
+    Enterprise: true,
+  }
+];
+
+export const Integration = [
+  {
+    Feature:
+      "Track time in 100+ popular tools with the Toggl Track browser extension",
+    Free: true,
+    Starter: true,
+    Premium: true,
+    Enterprise: true,
+  },
+  {
+    Feature: "API (Toggl Track API + Reports API)",
+    Free: true,
+    Starter: true,
+    Premium: true,
+    Enterprise: true,
+  },
+  {
+    Feature: "View Outlook and Google Calendar events in Toggl Track",
+    Free: true,
+    Starter: true,
+    Premium: true,
+    Enterprise: true,
+  },
+  {
+    Feature: "View tracked time in your calendar",
+    Free: false,
+    Starter: true,
+    Premium: true,
+    Enterprise: true,
+  },
+  {
+    Feature: "Jira Sync",
+    Free: false,
+    Starter: false,
+    Premium: true,
+    Enterprise: true,
+  },
+  {
+    Feature: "Salesforce Sync",
+    Free: false,
+    Starter: false,
+    Premium: true,
+    Enterprise: true,
+  },
+];
