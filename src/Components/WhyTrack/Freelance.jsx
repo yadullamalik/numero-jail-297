@@ -170,11 +170,14 @@ export const FreeLance = () => {
         <h1>Toggl Track is better together. Used daily by 70,000+ teams.</h1>
         <p>See how teams in various industries use Toggl Track</p>
         <img src="https://i.postimg.cc/CK6246RR/Screenshot-199.png" className="last-div-img" alt="" />
+        <div className="last-div-img-2-div">
+
         <img
           src="https://i.postimg.cc/3r6Kwn9J/Screenshot-201.png"
           className="last-div-img-2"
           alt=""
         />
+        </div>
       </div>
     </div>
   );
