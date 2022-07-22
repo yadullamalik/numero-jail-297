@@ -5,11 +5,12 @@
     text-align: center;
      width:100%;
      height:380px;
-     background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://public-assets.toggl.com/b/static/a848ad9070fcf959a459fa1e878d2abb/c0583/hero-laptops.jpg");
+     background-image: linear-gradient(rgba(3, 3, 3, 0.5), rgba(110, 98, 45, 0.8)), url("https://public-assets.toggl.com/b/static/a848ad9070fcf959a459fa1e878d2abb/c0583/hero-laptops.jpg");
      color: white;
      z-index: -1;
-    
-    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 .hidden{
     display: none;

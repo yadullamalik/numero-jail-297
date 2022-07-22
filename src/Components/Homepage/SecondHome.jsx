@@ -1,6 +1,6 @@
 import React from "react";
 import "./Homepage.css";
-import { ArrowUpIcon, ChevronRightIcon } from "@chakra-ui/icons";
+import {  ChevronRightIcon } from "@chakra-ui/icons";
 
 const SecondHome = () => {
   return (

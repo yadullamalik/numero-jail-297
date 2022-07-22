@@ -33,7 +33,7 @@ const Timer= () => {
   };
 
   return (
-    <>
+    <div className='maintimer'>
       <div className="timer">
         <h1 className='timerh1'>Stand-up Meeting</h1>
           <div className="timer-container" >
@@ -67,7 +67,7 @@ const Timer= () => {
 “I love the ease of just clocking in <br/>and out with <span><i style={{color:"rgb(201, 108, 192)"}}>just one click!</i></span>”</h1>
 <h1 className='textundertimer2'>-Quelani P.
 </h1>
-    </>
+    </div>
   );
 }
 

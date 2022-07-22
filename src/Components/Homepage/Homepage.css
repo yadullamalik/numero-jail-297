@@ -20,6 +20,10 @@ justify-content: center;
 margin-right:240px;
 margin-top: 20px;
 }
+
+.btnsecondHome:hover{
+   background-color: rgb(97, 92, 92);
+}
 .second-divhome{
     background-color:rgb(250, 229, 247);
     width: 500px;
