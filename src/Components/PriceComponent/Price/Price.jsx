@@ -1,16 +1,19 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import Annual from "../Billing/Annual";
 import Monthly from "../Billing/Monthly";
 import FAQs from "../FAQs/FAQs";
 import PlanCompare from "../PlanCompare/PlanCompare";
+
 import Signup from "../signUp/Signup";
 import style from "./Price.module.css";
 const Price = () => {
   const [show, setShow] = useState(true);
+
   const comparePlan = useRef(null);
   const scrollComparePlan = () => {
     comparePlan.current?.scrollIntoView({ behavior: "smooth" });
   };
+
   return (
     <div className={style.mainPricingDiv}>
       <div className={style.mainHeadingDiv}>
@@ -70,6 +73,7 @@ const Price = () => {
           src="https://public-assets.toggl.com/b/static/1ede89b0d75ce5a9cd6476ba3f2d6cf4/83e96/brands-oneliner.avif"
           alt=""
         />
+
         <h1 className={style.faq}>FAQs</h1>
         <FAQs />
         <div className={style.signupMainDiv}>

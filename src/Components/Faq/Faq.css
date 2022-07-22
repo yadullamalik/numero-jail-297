@@ -1,0 +1,46 @@
+.faq-main-div {
+  background-color: #412a4c;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.main-h1 {
+  color: #e57cd8;
+  font-size: 47px;
+  line-height: 57px;
+  font-family: "GT Haptik Medium", sans-serif;
+  margin-top: 100px;
+}
+.faq {
+  text-align: start;
+  margin: auto;
+  width: 1100px;
+}
+.faq > div {
+  border-top: 1px solid black;
+  padding: 20px 30px;
+}
+.faq > div > div {
+  display: flex;
+  justify-content: space-between;
+}
+.faq > div > div > span {
+  font-size: 30px;
+  color: #fce5d8;
+  margin-top: 15px;
+}
+.faq > div > div > h1 {
+  font-size: 24px;
+  line-height: 32.4px;
+  color: #fce5d8;
+  font-family: "GT Haptik Medium", sans-serif;
+}
+.faq > div > p {
+  color: #412a4c;
+  font-size: 15px;
+  line-height: 22.8px;
+  font-family: Inter, sans-serif;
+}
+.lastChild {
+  border-bottom: 1px solid black;
+}
