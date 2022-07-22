@@ -53,9 +53,22 @@ const CurrentJobs = () => {
             <p className='para3'>Curious about our culture and how we work?</p>
             <div className='btn2'><button className='btn3' >Explore more</button></div>
  </div>
+
+
+ <div className='sd7'> 
+ <img style={{
+  height:"600px",
+  marginTop:"30px",
+ }} src="https://i.postimg.cc/Hx6JW977/process.png"/></div>
 <div className='sd5'>
+ <img style={{
+  marginTop:"100px",
+ }} src="https://i.postimg.cc/3r1vBp9q/togglbenifits.png"/>
   <div className='Faq-div'><Faq/></div>
   <div className='sd6'><InsideScoop/></div>
+
+
+
 </div>
 
         </div>
