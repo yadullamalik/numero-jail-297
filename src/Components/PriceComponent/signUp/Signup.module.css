@@ -1,0 +1,98 @@
+.signUpDiv{
+    height: 207px;
+    width: 1100px;
+    margin: auto;
+    color: #412A4C;
+    background-color: #FCE5D8;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+.signUpSecondDiv{
+    height:156px;
+    width:1040px;
+    margin: auto;
+}
+.signUpSecondDiv>h1{
+    font-size: 32px;
+    font-weight: 600;
+    display: flex;
+    gap: 10px;
+}
+.skewed{
+    transform: skew(-30deg);
+    color: #E57CD8;
+}
+
+.inputDiv{
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+    align-items: center;
+}
+
+.inputDiv>input{
+    height: 50px;
+    width: 265px;
+    border: 2px solid #ABA0AF;
+    box-sizing: border-box;
+    
+}
+.inputGroup{
+    max-width: 265px;
+    height: 50px;
+    /* border: 2px solid #ABA0AF; */
+}
+
+.inputGroup>input{
+    height: 50px;
+    width: 265px;
+    border: 2px solid #ABA0AF;
+}
+
+.inputGroup button{
+    border: 0px;
+    background-color: #FCE5D8;
+    font-size: 35px;
+    margin-top: 10px;
+}
+.inputGroup button:hover{
+    border: 0px;
+    background-color: #FCE5D8;
+}
+
+.signupButton{
+    width: 206px;
+    height: 52px;
+    border-radius: 30px;
+    background-color: #E57CD8;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.signupButton>p{
+    margin: auto;
+    font-weight: 600;
+}
+.signupButton:hover{
+    background-color: #412A4C;
+    color: white;
+}
+.logoDiv{
+    height: 52px;
+    width: 52px;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    border-radius: 90px;
+}
+.logoDiv>img{
+    height: 35px;
+    width: 35px;
+}
+
+.signUpSecondDiv>p{
+    font-size: 13px;
+    margin-top: 18px;
+}
