@@ -195,6 +195,8 @@
   font-family: "GT Haptik Medium", sans-serif;
   font-size: 32px;
   line-height: 40px;
+  font-weight: 600;
+  margin-top: 80px;
 }
 .last-div > p {
   color: #2c1338;
@@ -208,4 +210,8 @@
 .last-div-img-2 {
   width: 130%;
   margin-left: -250px;
+}
+.last-div-img-2-div {
+  width: 100%;
+  overflow: hidden;
 }
