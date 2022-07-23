@@ -40,7 +40,46 @@ body {
     background-color:#fdf1ec ;
     transform: skewY(10deg);
     z-index: -1;
+
     margin-top: 780px;
+}
+
+.td-heading3 {
+font-size: 45px;
+margin-top: 80px;
+color:black ;
+font-weight: bold;
+transform: skewY(-10deg);
+}
+
+.td-para3{
+    width: 580px;
+    transform: skewY(-10deg);
+    margin-top: 40px;
+    font-size: 19px;
+    margin-left: 500px;
+}
+
+.carousel1{
+    transform: skewY(-10deg); 
+    margin-top: 100px; 
+    margin-left: 210px;
+   
+}
+.para-td4{
+    width: 450px;
+    margin-left: 280px;
+    margin-top: 70px;
+}
+.violet{
+    width: 500px;
+    height: 70px;
+    border: 1px solid #f5cbef;
+    margin-left: 240px;
+    margin-top: 58px;
+    border-radius:40px;
+    background-color: #f5cbef ;
+
 }
 .sd7{
     position: absolute;
