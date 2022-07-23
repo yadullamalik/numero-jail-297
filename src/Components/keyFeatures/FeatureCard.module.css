@@ -1,0 +1,22 @@
+.featurecard_div {
+  width: 430px;
+  text-align: left;
+  font-family: Inter, sans-serif;
+  margin: 100px 0px;
+}
+.featurecard_div > img {
+  width: 100%;
+}
+.featurecard_div > h2 {
+  color: #e57cd8;
+  font-weight: 500;
+  margin-bottom: 7px;
+  font-size: 25px;
+  margin-top: 20px;
+}
+.featurecard_div > span {
+  color: #fff3ed;
+  font-size: 15.2px;
+  line-height: 22.8px;
+  letter-spacing: normal;
+}

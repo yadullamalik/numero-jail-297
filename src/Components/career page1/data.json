@@ -1,0 +1,27 @@
+
+ [
+    {
+      "id": 1,
+      "title": "What Can You Expect from Working at Toggl?",
+      "imgURL":
+        "https://public-assets.toggl.com/b/static/74ab61ab1387225fe955e9e995bc907f/1e118/resource-working-at-toggl.png"  ,
+        "para":"Every successful startup has a “secret sauce” – ours is our people"
+    },
+    {
+      "id": 2,
+      "title": "A Day in the Life of a Toggl Frontend Developer",
+      "imgURL":
+        "https://public-assets.toggl.com/b/static/6b8e99e6d72ea8ba3140ede9053246ec/1e118/resource-toggl-developer-job.png",
+     "para":"Working for Toggl is even better than what I expected"
+    },
+    
+   
+    
+    {
+      "id": 10,
+      "title": "Where We Work",
+      "imgURL":
+        "https://public-assets.toggl.com/b/static/70c4f15653df15719ddd788a14b756d4/1e118/resource-toggl-workspaces.png",
+        "para":"Our remote staff shares their workspaces - from cafés to living rooms, and beyond!"
+    }
+  ]
