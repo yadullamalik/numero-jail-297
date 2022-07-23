@@ -55,11 +55,13 @@ const CurrentJobs = () => {
  </div>
 
 
- <div className='sd7'> 
+
+ {/* <div className='sd7'> 
  <img style={{
   height:"600px",
   marginTop:"30px",
- }} src="https://i.postimg.cc/Hx6JW977/process.png"/></div>
+ }} src="https://i.postimg.cc/Hx6JW977/process.png"/></div> */}
+
 <div className='sd5'>
  <img style={{
   marginTop:"100px",

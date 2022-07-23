@@ -233,7 +233,9 @@ height: 50px;
     background-color:#412a4c  ;
     /* transform: skewY(10deg); */
     z-index: -1;
-    margin-top: 3330px;  
+
+    margin-top: 2640px;  
+
 
 }
 .Faq-div{
@@ -263,7 +265,9 @@ margin-top: 100px;
     z-index: -1;
     margin-top: 350px;   
 }
+
 .sd7{
+
     position: absolute;
     content: '';
     width: 100%;
@@ -271,7 +275,8 @@ margin-top: 100px;
     top: 65%;
     left: 0;
     background-color:#fce5d8;
-    /* transform: skewY(10deg); */
+
     z-index: -1;
     margin-top: 2640px; 
 }
+
